@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="splash-screen">
+      <h1>Welcome to AmEyeDrunk</h1>
+    </div>
+    <header>
+      <h1>AmEyeDrunk</h1>
+      <p>Your Personal Intoxication Detection App</p>
+    </header>
+    <div class="content" id="home">
+      <h2>How It Works</h2>
+      <ul>
+        <li><strong>Simple Scan:</strong> Point your smartphone camera at your eyes.</li>
+        <li><strong>Advanced Analysis:</strong> Our AI analyzes eye movements and pupil reactions.</li>
+        <li><strong>Instant Results:</strong> Receive immediate feedback on your intoxication level.</li>
+      </ul>
+      <button class="cta-button" onclick="tryItNow()">Try It Now</button>
+      <video id="video" width="100%" autoplay style="display:none;"></video>
+      <button id="capture-button" style="display:none;" onclick="captureImage()">Capture Image</button>
+      <div id="gallery"></div>
+    </div>
+    <!-- Add other tabs content here -->
+    <div class="tab-bar">
+      <button class="tab-button" onclick="showTab('home')">Home</button>
+      <button class="tab-button" onclick="showTab('contact')">Contact Us</button>
+      <button class="tab-button" onclick="showTab('about')">About</button>
+      <button class="tab-button" onclick="showTab('settings')">Settings</button>
+    </div>
+  </body>
+</html>
